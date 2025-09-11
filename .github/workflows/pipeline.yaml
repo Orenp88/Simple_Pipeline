@@ -18,5 +18,5 @@ jobs:
             - name: Docker Push
               run: docker push ${{secrets.DOCKER_USERNAME}}/simple_pipeline:latest
 
-            - name: List
-              run: ls -la
+            - name: Show Date
+              run: echo "The current date and time is: ${new Date()}"
