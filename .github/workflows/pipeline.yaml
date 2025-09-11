@@ -19,4 +19,4 @@ jobs:
               run: docker push ${{secrets.DOCKER_USERNAME}}/simple_pipeline:latest
 
             - name: Show Date
-              run: ./date.sh
+              run: chmod +x date.sh && ./date.sh
